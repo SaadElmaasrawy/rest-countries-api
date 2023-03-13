@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/16b44d3bb6.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <title>rest countries api</title>
+</head>
+<body id="body">
+    <nav>
+        <div class="nav" id="nav">
+            <h1>Where in the world?</h1>
+            <div  onclick="darkMode()">
+                <h3 ><i class="fa-regular fa-moon"></i> Dark Mode</h3>
+            </div>
+        </div>
+    </nav>
+
+    <main id="main">
+        <div class="search-con">
+            <div class="search">
+                <i class="fa-solid fa-magnifying-glass" ></i>
+                <input type="text" placeholder="Search for a country ..." id="input">
+            </div>
+            <div class="region">
+                <select name="region-select" id="region-select" >
+                    <option value="" disabled selected hidden>filter by regions</option>
+                    <option value="Africa">Africa</option>
+                    <option value="Americas">Americas</option>
+                    <option value="Asia">Asia</option>
+                    <option value="Europe">Europe</option>
+                    <option value="Oceania">Oceania</option>
+                    <option value="all">all</option>
+                </select>
+            </div>
+        </div>
+        <div class="countries"  id="countries">
+        </div>
+        
+    </main>
+    <div class="page" id="page">
+        
+    </div>
+
+
+
+    <script src="./main.js"></script>
+</body>
+</html>
